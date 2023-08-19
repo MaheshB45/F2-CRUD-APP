@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F2-CRUD-APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h2>Student Management CRUD</h2>
+
+        <form id="form">
+            <input type="text" name="name" id="name" placeholder="Name" />
+
+            <input type="email" name="email" id="email" placeholder="Email" />
+
+            <input type="number" name="gpa" id="gpa" min="0" max="10" step="0.1" placeholder="GPA" />
+
+            <input type="number" name="age" id="age" placeholder="Age" />
+
+            <input type="text" name="degree" id="degree" placeholder="Degree" />
+
+            <!-- Add button -->
+            <input type="button" id="formbtn" value="Add Student" />
+        </form>
+        <!-- Search box -->
+        <div class="inp-2">
+            <input type="text" id="search-box" placeholder="Search By Name, email or degree">
+        </div>
+        <br>
+        <br>
+        <div id="table-container">
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th colspan="1">ID</th>
+                        <th colspan="5">Student Name</th>
+                        <th colspan="5">Email</th>
+                        <th colspan="2">Age</th>
+                        <th colspan="2">GPA</th>
+                        <th colspan="3">Degree</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- Student profiles will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
